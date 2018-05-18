@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>DETECTING DRUGS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="logo.png" alt="logo"></a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="recent.php">Recent Results</a>
+				</li>
+				<li>
+					<a href="login.html">Log In</a>
+				</li>
+				<li>
+					<a href="news.html">News &amp; Blog</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+<center>
+<form  onsubmit="return validate();" method="post" action="join.php">
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name*:</b></td>
+<td>
+<input id="FirstName" name="FirstName" type="text" maxlength="60" style="width:198px; height: 2em; border:1px solid #999999;" >
+<input id="LastName" name="LastName" type="text" maxlength="60" style="width:198px; height: 2em; border:1px solid #999999;" >
+</td>
+</tr><tr>
+<td><b>Organization*:</b></td>
+<td><input id="Organization" name="Organization" type="text" maxlength="60" style="width:400px; height: 2em; border:1px solid #999999;" ></td>
+</tr><tr>
+<td><b>Email address*:</b></td>
+<td><input id="FromEmailAddress" name="FromEmailAddress" type="email" maxlength="60" style="width:400px; height: 2em; border:1px solid #999999;" ></td>
+
+</tr><tr><td><b>Password*:</b></td>
+<td><input id="password" name="password" type="password" maxlength="60" style="width:400px; height: 2em; border:1px solid #999999;" ></td>
+</tr>
+<tr>
+
+<td><b>Cell Phone:</b></td>
+<td><input id="CellPhone" name="CellPhone" type="text" maxlength="43" style="width:400px; height: 2em; border:1px solid #999999;" ></td>
+</tr><tr>
+<td><b>Address*:</b></td>
+<td><input id="StreetAddress1" name="StreetAddress1" type="text" maxlength="120" style="width:400px; height: 2em; border:1px solid #999999;" ></td>
+</tr>
+</table><br><br>
+<button class="button" type="submit"><span>SIGN UP</span></button>
+
+</form>
+</center>
+</div>
+	<div id="footer">
+		<div>
+			<form action="index.html">
+				<h2>Send A Message</h2>
+				<label for="name"><span>Your Name:</span>
+					<input type="text" id="name">
+				</label>
+				<label for="emailad"><span>Email Address:</span>
+					<input type="text" id="emailad">
+				</label>
+				<label for="message"><span class="message">Message:</span>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</label>
+				<input type="submit" class="send" value="Send">
+			</form>
+			<div>
+				<h2>Contact Details</h2>
+				<ul>
+					<li>
+						<b>Location</b>
+						<span>:</span>
+						<p>
+							This is just a place holder, so you can see what the site would look like
+						</p>
+					</li>
+					<li>
+						<b>Phone</b>
+						<span>:</span>
+						<p>
+							(+91) 9773025198;
+						</p>
+					</li>
+					<li>
+						<b>WebSite</b>
+						<span>:</span>
+						<p>
+							<a href="jayantsingh.wordpress.com" class="email" target="_blank">jayantsingh.com</a>
+						</p>
+					</li>
+					<li>
+						<b>Social</b>
+						<span>:</span>
+						<div>
+							<a href="" id="facebook" target="_blank">facebook</a>
+							<a href="" id="twitter" target="_blank">twitter</a>
+							<a href="" id="googleplus" target="_blank">google&#43;</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<script>
+function validate(){
+
+
+	 
+		 var a = document.getElementsByName("FirstName")[0].value;
+    	 var b = document.getElementsByName("LastName")[0].value;
+		 var c = document.getElementsByName("Organization")[0].value;
+    	 var d = document.getElementsByName("FromEmailAddress")[0].value;
+    	 var e = document.getElementsByName("password")[0].value;
+    	 var f = document.getElementsByName("CellPhone")[0].value;
+    	 var g = document.getElementsByName("StreetAddress1")[0].value;
+
+
+    	 if (a == "" )
+    	 {
+    	 	alert("Enter First Name");
+    	 	return false;
+    	 }
+    	 else if (b == "")
+    	 {
+    	 	alert("Enter Last Name");
+    	 	return false;
+    	 }
+    	 else if (c == "" )
+    	 {
+    	 	alert("Enter Organiztion name");
+    	 	return false;
+    	 }
+    	 else if (d == "")
+    	 {
+    	 	alert("Enter email adress");
+    	 	return false;
+    	 }
+    	 else if (e == "" )
+    	 {
+    	 	alert("Enter passworde");
+    	 	return false;
+    	 }
+    	else if (f == "" )
+    	 {
+    	 	alert("Enter First Name");
+    	 	return false;
+    	 }
+    	 else if (g == "" )
+    	 {
+    	 	alert("Enter First Name");
+    	 	return false;
+    	 }
+         else if(a!=""&& b!=""&& c!=""&& d!=""&& e!=""&& f!=""&& g!=""&& h!=""){
+         	return true;
+         }
+    	
+    }
+</script>
+</body>
+</html>
